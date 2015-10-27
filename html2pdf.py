@@ -26,5 +26,5 @@ for node in tree.xpath('//a[re:test(@href, "\.pdf$", "i")]', namespaces=ns):
 #fetches all the pdfs and puts them in the directory defined in the filename variable
 #changes in the directory and filename are both done in the filename
 for i,e in enumerate(urlist):
-	urllib.urlretrieve(e,filename='/Users/gongui/Dropbox/sci/neuro/optimization_theory/hoppe_opt_theory'+str(i)+'.pdf')
+	urllib.urlretrieve(e,filename='/file/path/file_name'+str(i)+'.pdf')
 	print (i/float(len(urlist)))*100
